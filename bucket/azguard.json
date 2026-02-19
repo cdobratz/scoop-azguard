@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "description": "One command to make sure your Azure free tier does not surprise you with a bill",
+  "description": "One command to make sure your Azure free tier doesn't surprise you with a bill",
   "homepage": "https://github.com/cdobratz/AzGuard",
   "license": "MIT",
   "architecture": {
