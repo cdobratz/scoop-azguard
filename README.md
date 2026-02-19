@@ -12,6 +12,22 @@ scoop bucket add azguard https://github.com/cdobratz/scoop-azguard
 scoop install azguard
 ```
 
+## Troubleshooting
+
+If azguard doesn't run after install:
+
+1. **Restart your terminal** - This reloads the PATH
+2. **Manually add Scoop to PATH:**
+   ```powershell
+   $env:PATH += ";$env:USERPROFILE\scoop\shims"
+   ```
+3. **Check installation:**
+   ```powershell
+   scoop which azguard
+   ```
+
+For permanent fix, add the Scoop shims folder to your system PATH.
+
 ## Usage
 
 ```powershell
