@@ -1,12 +1,12 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "One command to make sure your Azure free tier doesn't surprise you with a bill",
   "homepage": "https://github.com/cdobratz/AzGuard",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/cdobratz/AzGuard/releases/download/v1.0.0/azguard_1.0.0_windows_amd64.zip",
-      "hash": "sha256:ed259e5798a7d293eeffc0eca5644b68ede578d17917de4c8dbe645994fc8bd9"
+      "url": "https://github.com/cdobratz/AzGuard/releases/download/v1.0.3/azguard_1.0.3_windows_amd64.zip",
+      "hash": "sha256:1d11e32c76738a2ac33b97b0b3e403bf64a64e421285b914aa6ed3fee3e21554"
     }
   },
   "bin": "azguard.exe",
