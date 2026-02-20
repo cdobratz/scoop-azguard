@@ -38,7 +38,7 @@ azguard status
 azguard scan
 
 # Set budget alerts
-azguard budget --set 50
+azguard budget add 5
 
 # List all resources
 azguard resources
@@ -47,7 +47,7 @@ azguard resources
 azguard cleanup
 
 # View cost breakdown
-azguard cost
+azguard cost current
 ```
 
 ## Requirements
