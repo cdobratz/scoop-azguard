@@ -71,6 +71,32 @@ azguard aws resources
 azguard aws cost
 ```
 
+## AWS Credential Setup
+
+AzGuard resolves AWS credentials in the following order:
+
+1. **AzGuard config file** (`~/.azguard/config.yaml`):
+   ```yaml
+   aws:
+     access_key: "YOUR_ACCESS_KEY"
+     secret_key: "YOUR_SECRET_KEY"
+     region: "us-east-1"
+   ```
+
+2. **Environment variables:**
+   ```powershell
+   $env:AWS_ACCESS_KEY_ID = "YOUR_ACCESS_KEY"
+   $env:AWS_SECRET_ACCESS_KEY = "YOUR_SECRET_KEY"
+   $env:AWS_DEFAULT_REGION = "us-east-1"
+   ```
+
+3. **AWS CLI** (automatic fallback — if you've already run `aws configure`, AzGuard picks up those credentials)
+
+### Required IAM Permissions
+
+- `ce:GetCostAndUsage` — Cost Explorer queries
+- `freetier:GetFreeTierUsage` — Free tier usage data
+
 ## Requirements
 
 ### Azure
@@ -81,8 +107,7 @@ azguard aws cost
 ### AWS
 
 - AWS account (free tier eligible)
-- AWS CLI configured (`aws configure`)
-- IAM permissions: `ce:GetCostAndUsage`, `freetier:GetFreeTierUsage`
+- AWS credentials configured (see above)
 
 For more commands and options, see the [full documentation](https://github.com/cdobratz/AzGuard).
 
